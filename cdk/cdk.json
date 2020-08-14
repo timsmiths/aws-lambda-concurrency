@@ -1,3 +1,3 @@
 {
-  "app": "npx ts-node bin/meshdemo.ts"
+  "app": "npx ts-node bin/demo.ts"
 }

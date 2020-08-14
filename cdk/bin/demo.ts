@@ -6,12 +6,13 @@ import {
   DemoStack
 } from '../lib/stack';
 
+import config from '../env';
 
 const demo = new cdk.App();
 new DemoStack(demo, 'demo', {
   "stackName": "demo",
   "env": {
-    "region": "eu-west-1",
-    "account": "192011874229"
+    "region": config.region,
+    "account": config.accountId,
   }
 });

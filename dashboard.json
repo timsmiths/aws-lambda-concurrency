@@ -68,7 +68,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": false,
-          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-1'\nORDER BY 1",
+          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-1'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -80,7 +80,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -156,7 +156,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": false,
-          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-2'\nORDER BY 1",
+          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-2'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -168,7 +168,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -244,7 +244,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": false,
-          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-3'\nORDER BY 1",
+          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-3'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -256,7 +256,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -343,7 +343,7 @@
           "hide": false,
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,1s),\n  count(id) AS \"id\"\nFROM invocation\nWHERE \n  $__timeFilter(created_at) AND group_id = 'consumer-1'\nGROUP BY 1\nORDER BY 1",
+          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,1s),\n  count(id) AS \"id\"\nFROM invocations\nWHERE \n  $__timeFilter(created_at) AND group_id = 'consumer-1'\nGROUP BY 1\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -367,7 +367,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -392,7 +392,7 @@
           "hide": false,
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,1s),\n  count(id) AS \"id\"\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND group_id = 'consumer-2'\nGROUP BY 1\nORDER BY 1",
+          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,1s),\n  count(id) AS \"id\"\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND group_id = 'consumer-2'\nGROUP BY 1\nORDER BY 1",
           "refId": "B",
           "select": [
             [
@@ -416,7 +416,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -441,7 +441,7 @@
           "hide": false,
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,1s),\n  count(id) AS \"id\"\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND group_id = 'consumer-3'\nGROUP BY 1\nORDER BY 1",
+          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,1s),\n  count(id) AS \"id\"\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND group_id = 'consumer-3'\nGROUP BY 1\nORDER BY 1",
           "refId": "C",
           "select": [
             [
@@ -465,7 +465,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -481,7 +481,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Invocations",
+      "title": "invocationss",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -573,7 +573,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-1'\nORDER BY 1",
+          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-1'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -585,7 +585,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -688,7 +688,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-2'\nORDER BY 1",
+          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-2'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -700,7 +700,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocationss",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -803,7 +803,7 @@
           "group": [],
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-3'\nORDER BY 1",
+          "rawSql": "SELECT\n  created_at AS \"time\",\n  id\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-3'\nORDER BY 1",
           "refId": "A",
           "select": [
             [
@@ -815,7 +815,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -945,7 +945,7 @@
           ],
           "metricColumn": "cache_id",
           "rawQuery": false,
-          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,$__interval),\n  cache_id AS metric,\n  count(id) AS \"id\"\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-1'\nGROUP BY 1, cache_id,2\nORDER BY 1,2",
+          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,$__interval),\n  cache_id AS metric,\n  count(id) AS \"id\"\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-1'\nGROUP BY 1, cache_id,2\nORDER BY 1,2",
           "refId": "A",
           "select": [
             [
@@ -969,7 +969,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -1114,7 +1114,7 @@
           ],
           "metricColumn": "cache_id",
           "rawQuery": false,
-          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,$__interval),\n  cache_id AS metric,\n  count(id) AS \"id\"\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-2'\nGROUP BY 1, cache_id,2\nORDER BY 1,2",
+          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,$__interval),\n  cache_id AS metric,\n  count(id) AS \"id\"\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-2'\nGROUP BY 1, cache_id,2\nORDER BY 1,2",
           "refId": "A",
           "select": [
             [
@@ -1138,7 +1138,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -1283,7 +1283,7 @@
           ],
           "metricColumn": "cache_id",
           "rawQuery": false,
-          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,$__interval),\n  cache_id AS metric,\n  count(id) AS \"id\"\nFROM invocation\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-3'\nGROUP BY 1, cache_id,2\nORDER BY 1,2",
+          "rawSql": "SELECT\n  $__timeGroupAlias(created_at,$__interval),\n  cache_id AS metric,\n  count(id) AS \"id\"\nFROM invocations\nWHERE\n  $__timeFilter(created_at) AND\n  group_id = 'consumer-3'\nGROUP BY 1, cache_id,2\nORDER BY 1,2",
           "refId": "A",
           "select": [
             [
@@ -1307,7 +1307,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -1429,7 +1429,7 @@
           ],
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT COUNT(*) as metric FROM (SELECT DISTINCT cache_id FROM invocation WHERE group_id = 'consumer-1') AS metric;",
+          "rawSql": "SELECT COUNT(*) as metric FROM (SELECT DISTINCT cache_id FROM invocations WHERE group_id = 'consumer-1') AS metric;",
           "refId": "A",
           "select": [
             [
@@ -1453,7 +1453,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -1529,7 +1529,7 @@
           ],
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT COUNT(*) as metric FROM (SELECT DISTINCT cache_id FROM invocation WHERE group_id = 'consumer-2') AS metric;",
+          "rawSql": "SELECT COUNT(*) as metric FROM (SELECT DISTINCT cache_id FROM invocations WHERE group_id = 'consumer-2') AS metric;",
           "refId": "A",
           "select": [
             [
@@ -1553,7 +1553,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
@@ -1629,7 +1629,7 @@
           ],
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "SELECT COUNT(*) as metric FROM (SELECT DISTINCT cache_id FROM invocation WHERE group_id = 'consumer-3') AS metric;",
+          "rawSql": "SELECT COUNT(*) as metric FROM (SELECT DISTINCT cache_id FROM invocations WHERE group_id = 'consumer-3') AS metric;",
           "refId": "A",
           "select": [
             [
@@ -1653,7 +1653,7 @@
               }
             ]
           ],
-          "table": "invocation",
+          "table": "invocations",
           "timeColumn": "created_at",
           "timeColumnType": "timestamp",
           "where": [
